@@ -1,0 +1,262 @@
+/* =========================
+   MENGATUR SELURUH HALAMAN
+========================= */
+
+*{
+    margin:0; /* Menghilangkan margin bawaan browser */
+    padding:0; /* Menghilangkan padding bawaan browser */
+    box-sizing:border-box; /* Agar ukuran elemen lebih mudah diatur */
+    font-family:'Segoe UI',sans-serif; /* Mengubah jenis font */
+}
+
+body{
+    background:#f4f7fb; /* Mengubah warna background halaman */
+    color:#333; /* Mengubah warna teks utama */
+    line-height:1.6; /* Mengatur jarak antar baris */
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar{
+    background:#0d3b66; /* Mengubah warna navbar */
+    display:flex; /* Membuat elemen sejajar horizontal */
+    justify-content:space-between; /* Logo kiri, menu kanan */
+    align-items:center; /* Posisi vertikal rata tengah */
+    padding:18px 60px; /* Jarak isi navbar */
+    position:sticky; /* Navbar tetap tampil saat scroll */
+    top:0;
+    z-index:1000;
+    box-shadow:0 2px 10px rgba(0,0,0,0.1); /* Menambahkan bayangan */
+}
+
+.logo{
+    color:white; /* Mengubah warna tulisan logo */
+    font-size:24px; /* Mengubah ukuran logo */
+    font-weight:bold; /* Membuat tulisan tebal */
+}
+
+.menu{
+    display:flex; /* Menu berjajar ke samping */
+    list-style:none; /* Menghilangkan bullet list */
+    gap:25px; /* Jarak antar menu */
+}
+
+.menu a{
+    color:white; /* Mengubah warna menu */
+    text-decoration:none; /* Menghilangkan garis bawah link */
+    font-weight:500;
+    transition:0.3s;
+}
+
+.menu a:hover{
+    color:#ffd166; /* Warna menu saat disentuh cursor */
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero{
+    min-height:90vh; /* Tinggi hero hampir satu layar */
+    display:flex;
+    justify-content:center; /* Isi berada di tengah horizontal */
+    align-items:center; /* Isi berada di tengah vertikal */
+    text-align:center; /* Teks rata tengah */
+    padding:40px;
+
+    background:linear-gradient(
+        135deg,
+        #0d3b66,
+        #1f6fb2
+    ); /* Membuat background gradasi */
+
+    color:white; /* Warna tulisan hero */
+}
+
+.hero-content{
+    max-width:800px; /* Membatasi lebar isi hero */
+}
+
+.logo-lampung{
+    width:120px; /* Mengubah ukuran logo */
+    margin-bottom:20px; /* Jarak bawah logo */
+}
+
+.hero h1{
+    font-size:40px; /* Ukuran judul utama */
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:20px; /* Ukuran deskripsi */
+    margin-bottom:30px;
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+.btn{
+    display:inline-block;
+    padding:15px 35px; /* Ukuran tombol */
+    background:#ffd166; /* Warna tombol */
+    color:#000; /* Warna teks tombol */
+    text-decoration:none;
+    border-radius:50px; /* Membuat tombol oval */
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.btn:hover{
+    transform:translateY(-4px); /* Tombol naik saat disentuh cursor */
+}
+
+/* =========================
+   SECTION/tentang kami
+========================= */
+
+.section{
+    padding:40px 10%;
+    text-align:center;
+}
+
+.section h2{
+    font-size:36px; /* Ukuran judul section */
+    color:#0d3b66; /* Warna judul */
+    margin-bottom:25px;
+}
+
+.section p{
+    margin-top:20px; /* Jarak paragraf dari atas */
+}
+
+/* =========================
+   KEUNGGULAN SISTEM
+========================= */
+
+.keunggulan{
+    display:flex; /* Kotak berjajar */
+    justify-content:center; /* Posisi di tengah */
+    align-items:center;
+    gap:30px; /* Jarak antar kotak */
+    flex-wrap:wrap; /* Turun ke bawah jika layar kecil */
+    padding:60px 20px;
+}
+
+.unggul-box{
+    width:280px; /* Lebar kotak */
+    background:white; /* Warna kotak */
+    padding:25px;
+    border-radius:15px; /* Membulatkan sudut */
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1); /* Bayangan */
+    transition:0.3s;
+}
+
+.unggul-box:hover{
+    transform:translateY(-8px); /* Efek naik saat cursor diarahkan */
+}
+
+.unggul-box h3{
+    color:#0d3b66; /* Warna judul keunggulan */
+    margin-bottom:10px;
+}
+
+/* =========================
+   LAYANAN
+========================= */
+
+.layanan{
+    background:#eef4fb; /* Warna background layanan */
+}
+
+.card-container{
+    display:flex; /* Card berjajar */
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:30px;
+    margin-top:40px;
+}
+
+.card{
+    width:300px; /* Lebar card */
+    background:white;
+    padding:30px;
+    border-radius:20px; /* Membulatkan sudut card */
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px); /* Efek naik saat cursor diarahkan */
+}
+
+.icon{
+    font-size:50px; /* Ukuran icon */
+    margin-bottom:15px;
+}
+
+.card h3{
+    color:#0d3b66; /* Warna judul card */
+    margin-bottom:15px;
+}
+
+/* =========================
+   PENGEMBANG
+========================= */
+
+.foto-dev{
+    width:280px; /* Ukuran foto */
+    border-radius:20px; /* Membulatkan foto */
+    margin:25px 0;
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+
+.section h3{
+    margin-top:10px; /* Jarak antar nama */
+    color:#0d3b66;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+    background:#0d3b66; /* Warna footer */
+    color:white; /* Warna tulisan footer */
+    text-align:center;
+    padding:20px;
+}
+
+/* =========================
+   RESPONSIVE MOBILE
+========================= */
+
+@media(max-width:768px){
+
+    .navbar{
+        flex-direction:column; /* Navbar menjadi vertikal */
+        padding:20px;
+    }
+
+    .menu{
+        margin-top:15px;
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .hero h1{
+        font-size:34px; /* Ukuran judul diperkecil */
+    }
+
+    .hero p{
+        font-size:16px; /* Ukuran deskripsi diperkecil */
+    }
+
+    .card{
+        width:100%;
+        max-width:350px;
+    }
+}
